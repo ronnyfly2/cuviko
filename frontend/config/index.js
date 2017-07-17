@@ -39,6 +39,5 @@ module.exports = {
     cssSourceMap: false
   },
   isProd: false,
-	domain: 'http://local.garita.pe'
-  // domain: location.origin
+	domain: 'http://local.cuviko.pe'
 }
