@@ -1,13 +1,13 @@
-#componets hiddens
+#components hiddens
 frontend/dist/
-frontend/componets/_Agent/
-frontend/componets/_Garita/
-frontend/componets/_Profile/
-frontend/componets/_Visitor/
-frontend/componets/_Report.vue
-frontend/componets/_Login.vue
-frontend/componets/_RestaurantAdd.vue
-frontend/componets/_test-services.vue
+frontend/components/_Agent/
+frontend/components/_Garita/
+frontend/components/_Profile/
+frontend/components/_Visitor/
+frontend/components/_Report.vue
+frontend/components/_Login.vue
+frontend/components/_RestaurantAdd.vue
+frontend/components/_test-services.vue
 # Logs
 logs
 *.log
