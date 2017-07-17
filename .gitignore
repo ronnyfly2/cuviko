@@ -1,9 +1,9 @@
 #components hiddens
 frontend/dist/
-frontend/components/_Agent/
-frontend/components/_Garita/
-frontend/components/_Profile/
-frontend/components/_Visitor/
+frontend/components/Agent/
+frontend/components/Garita/
+frontend/components/Profile/
+frontend/components/Visitor/
 frontend/components/_Report.vue
 frontend/components/_Login.vue
 frontend/components/_RestaurantAdd.vue
