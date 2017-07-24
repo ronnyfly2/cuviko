@@ -1,39 +1,22 @@
 <template lang="pug">
 	header
 		.box_center
-			img.logo(src="../assets/img/logo_garita.png")
+			img.logo(src="../assets/img/logo_cuviko.png")
 			.icon.icon-menu(@click="openMenu")
 			nav
 				ul
 					li
 						router-link(to="/")
-							i.icon.icon-localidad
-							span SUCURSALES
+							span ¿Cómo funciona?
 					li
 						router-link(to="/garita")
-							i.icon.icon-block-3
-							span GARITAS DE CONTROL
+							span ¿Cómo ofrecer mis servicios?
 					li
 						router-link(to="/agente")
-							i.icon.icon-police
-							span AGENTES DE SEGURIDAD
+							span Impacto Social
 					li
-
 						router-link(to="/visitor")
-							i.icon.icon-user-3
-							span VISITABLES
-					li
-						router-link(to="/report")
-							i.icon.icon-note
-							span REPORTE DE VISITAS
-					li
-						router-link(to="/profile")
-							i.icon.icon-user
-							span PERFIL
-					li
-						a(href="/empresa/logout")
-							i.icon.icon-logout
-							span Salir
+							button.btn.btn_black() Empezar
 							
 </template>
 
@@ -67,7 +50,7 @@ export default {
 <style lang="stylus">
 @import "../stylus/base/base.styl"
 header
-	height 100px
+	height 74px
 	width 100%
 	background white
 	position fixed
@@ -78,8 +61,8 @@ header
 		padding 0 10px
 .logo
 	width 12.538%
-	max-width 168px
-	margin-top 25px
+	max-width 199px
+	margin-top 15px
 	min-width 160px
 nav
 	width 82%
@@ -100,34 +83,19 @@ nav
 		&:last-child
 			margin-right 0
 	a
-		color #009edb
+		color #46535c
 		text-align center
-		height 100px
-		padding-top 24px
+		padding-top 17px
 		display block
-		.icon
-			color #009edb
-			font-size 25px
-			display block
-			text-align center
+		font-family 'Lato'
 		&.router-link-exact-active
-			border-bottom 3px solid #009edb
-			&:after
-				content ''
-				width 0
-				height 0
-				border-right 8px solid transparent
-				border-top 8px solid transparent
-				border-left 8px solid transparent
-				border-bottom 8px solid #009edb
-				position absolute
-				bottom 0
-				left 50%
-				margin-left -8px
-			span
-				font-family 'SanFranciscoDisplay-Bold'
+			color #3e74fe
 		span
 			font-size 17px
+	.btn
+		font-size 17px
+		padding-left 15px
+		padding-right 15px
 .icon-menu
 	display none
 </style>

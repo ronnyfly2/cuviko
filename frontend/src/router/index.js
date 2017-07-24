@@ -17,8 +17,8 @@ export default new Router({
 			name: 'Slider',
 			components: {
 				default: ListMenu,
-				containerBlock: Slider,
-				footerBlock: Footer
+				blockBanner: Slider,
+				blockFooter: Footer
 			}
 		},
 		{

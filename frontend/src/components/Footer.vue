@@ -1,7 +1,7 @@
 <template lang="pug">
 footer
-	span Desarrollado por
-	img(src="../assets/img/logo_cuviko.png")
+	span Contacto: 997234089 / hola@cuviko.com
+	span © 2017 Grupo Cúviko S.A.C. All rights reserved.
 </template>
 
 <script>
@@ -12,9 +12,9 @@ export default {
 <style lang="stylus">
 footer
 	width 100%
-	height 150px
-	padding 21px 0
-	background-color #009edb
+	height 120px
+	padding 28px 0
+	background-color #000000
 	text-align center
 	display block
 	margin-top 45px

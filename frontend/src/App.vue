@@ -1,8 +1,8 @@
 <template lang="pug">
 #app.container
 	router-view
-	router-view(name="containerBlock")
-	router-view(name="footerBlock")
+	router-view(name="blockBanner")
+	router-view(name="blockFooter")
 </template>
 
 <script>
