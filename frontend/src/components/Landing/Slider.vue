@@ -3,8 +3,8 @@
 		el-carousel(indicator-position="none" arrow="never" :interval="4000")
 			el-carousel-item(v-for="(item, index) in slider" :key="item")
 				.item_img
-					img(:src="item" @load="resizeImg")
-					a.btn_banner(href="javascrip:;" :class="'idx'+index") EMPEZAR
+					img(:src="item.img" @load="resizeImg")
+					a.btn_banner(:href="item.link" :class="'idx'+index") EMPEZAR
 </template>
 
 <script>
@@ -20,9 +20,24 @@
 		data() {
 			return {
 				slider:{
-					1: 'http://www.codersperu.com/imgs/banner_1.png',
-					2: 'http://www.codersperu.com/imgs/banner_2.png',
-					3: 'http://www.codersperu.com/imgs/banner_3.png'
+					1: {
+						img:'http://www.codersperu.com/imgs/banner_1.png',
+						link:'hola.com',
+						title:'Cuviko',
+						detalle:'hola soy cuviko'
+						},
+					2: {
+						img:'http://www.codersperu.com/imgs/banner_2.png',
+						link:'hola.com/2',
+						title:'Cuviko 2',
+						detalle:'hola soy cuviko 2'
+						},
+					3: {
+						img:'http://www.codersperu.com/imgs/banner_3.png',
+						link:'hola.com/3',
+						title:'Cuviko 3',
+						detalle:'hola soy cuviko 3'
+						}
 				}
 			}
 		},
@@ -61,7 +76,7 @@
 				position absolute
 				left 2.8%
 				bottom 10%
-				box-shadow 0 9px #07ad62
+				box-shadow 0 5px #07ad62
 				padding 12px 25px
 				font-weight bold
 				font-size 24px
@@ -69,7 +84,7 @@
 				background-color #25d087
 			&:active
 				background-color #149860
-				box-shadow 0 5px #07ad62
+				box-shadow 0 1px #07ad62
 				transform translateY(4px)
 			&.idx1
 				left 11.4%
