@@ -28,9 +28,8 @@
 		},
 		methods: {
 			resizeImg(callback){
-				let heightImg = $('.item_img > img').height();
-				$('.el-carousel__container').css('height',heightImg);
-				console.log(heightImg);
+				var preview = document.querySelectorAll('.item_img > img');
+				$('.el-carousel__container').css('height', preview[0].clientHeight);
 			},
 			onResize(){
 				let self = this;
